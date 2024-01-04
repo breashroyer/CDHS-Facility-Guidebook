@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+
+/* General reset */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #eceff1; /* Light grey background */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* Wrapper for sidebar and main content */
+.wrapper {
+    display: flex; /* Enables flexbox */
+    max-width: 1200px; /* Maximum width of the wrapper */
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    border-bottom: 1px solid #ddd;
+}
+
+.sidebar nav ul li a {
+    display: block;
+    padding: 15px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #259ed0;
+    color: white;
+}
+
+/* Main content styling */
+.main-content {
+    width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-left: 20px; /* Space between sidebar and main content */
+}
+
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        width: 100%;
+        box-shadow: none;
+        margin-bottom: 20px;
+    }
+
+    .main-content {
+        width: 95%;
+        margin-left: 0;
+    }
+}
+
+
+
+

@@ -1,0 +1,109 @@
+/* Add this at the top of your CSS file */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    font-family: 'Century Gothic', 'Poppins', sans-serif;
+}
+
+/* If you want specific elements to have Poppins */
+.element {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    background: url('./images/HomePageImage.jpg') no-repeat center center;
+    background-size: cover; /* Adjust this to the desired size */
+    background-repeat: no-repeat;
+}
+
+
+
+
+header {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #232a31;
+}
+
+.logo {
+    width: 100%; /* Adjust as necessary */
+}
+
+.pueblo {
+    background-color: #224e66;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.fort-logan {
+    background-color: #224e66;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.navigation ul {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    list-style-type: none;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.navigation li {
+    display: inline;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+
+/* Add media queries below for responsiveness */
+@media only screen and (max-width: 600px) {
+    header h1 {
+      font-size: 24px; /* Smaller font size for small screens */
+    }
+  
+    header p {
+      font-size: 14px; /* Smaller font size for small screens */
+    }
+  
+    .new-line {
+      display: block;
+      font-size: 18px; /* Separate line with a different font size if needed */
+    }
+  
+    .get-started {
+      padding: 10px; /* Smaller button for small screens */
+      font-size: 16px;
+    }
+  }
+  
